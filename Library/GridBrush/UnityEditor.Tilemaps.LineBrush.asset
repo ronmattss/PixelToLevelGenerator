@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 6210598a979f8724a8dac4531c428889, type: 3}
   m_Name: Line Brush
-  m_EditorClassIdentifier: Unity.2D.Tilemap.Extras.Editor:UnityEditor.Tilemaps:LineBrush
+  m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
     m_Matrix:

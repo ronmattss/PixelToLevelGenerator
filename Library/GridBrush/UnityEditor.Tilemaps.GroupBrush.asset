@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: eec4c0c21e439e04083398ccd1928db0, type: 3}
   m_Name: Group Brush
-  m_EditorClassIdentifier: Unity.2D.Tilemap.Extras.Editor:UnityEditor.Tilemaps:GroupBrush
+  m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
     m_Matrix:

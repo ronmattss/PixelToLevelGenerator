@@ -8,6 +8,8 @@ using System.Linq;
 public class PixelData
 {
     public Texture2D pixelImage;
+    public Texture2D[] pixelImages;
+
     public int textureHeight { get; private set; }
     public int textureWidth { get; private set; }
     public List<Color32> imageColorList = new List<Color32>();
@@ -18,6 +20,13 @@ public class PixelData
         {
             textureHeight = pixelImage.height;
             textureWidth = pixelImage.width;
+        }
+    }
+    public void DebugNames()
+    {
+        foreach (var pix in pixelImages)
+        {
+            Debug.Log(pix.GetType().FullName);
         }
     }
     public PixelData(Texture2D image)
@@ -32,9 +41,11 @@ public class PixelData
 
     public void LoadPixelColors()
     {
+        Debug.Log(nameof(pixelImage));
         var temp = pixelImage.GetPixels32().ToList();
         foreach (var pix in temp)
         {
+            if(pix.a==255)
             pixelColorHash.Add(pix);
         }
         imageColorList = pixelColorHash.ToList();
